@@ -1,15 +1,21 @@
 <h1>Coordinates Lookup</h1>
 
 <dl>
-  <dt>Address:</dt>
+
+   <dt>Entered address:</dt>
   <dd><%= @address %></dd>
 
-  <dt>URL Safe Address:</dt>
-  <dd><%= @url_safe_address %></dd>
-
-  <dt>Latitude:</dt>
+  <dt>Formatted Address:</dt>
+  <dd><%= @formatted_address %></dd>
+   <dt>Latitude:</dt>
   <dd><%= @latitude %></dd>
 
   <dt>Longitude:</dt>
   <dd><%= @longitude %></dd>
 </dl>
+
+<form>
+Enter address <input type="text" name="address" required><br>
+<input type="submit" value="Submit">
+</form>
+
